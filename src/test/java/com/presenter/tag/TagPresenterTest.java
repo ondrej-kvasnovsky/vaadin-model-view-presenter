@@ -45,8 +45,10 @@ public class TagPresenterTest {
         tagPresenter.addTag();
 
         Mockito.verify(tagService, times(1)).save((Tag) any());
+        Mockito.verify(newTagLayout, times(1)).afterSuccessfulSave();
     }
 
+//    // TODO: uncomment the code and implement the feature described in the test
 //    @Test
 //    public void isEmptyInputIgnored() throws Exception {
 //        when(newTagLayout.getTxtTagName()).thenReturn(new TextField(""));

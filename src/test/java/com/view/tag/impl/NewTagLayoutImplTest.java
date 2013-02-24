@@ -13,8 +13,10 @@ public class NewTagLayoutImplTest {
 
     @Before
     public void setUp() {
-        layout = new NewTagLayoutImpl(handler);
+        layout = new NewTagLayoutImpl();
         handler = mock(TagViewHandler.class);
+        layout.setHandler(handler);
+        layout.init();
     }
 
     @Test
