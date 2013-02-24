@@ -33,7 +33,7 @@ public class TagPresenter implements TagViewHandler {
             showTagList();
         } catch (ServiceException e) {
             // TODO: log the exception
-            Notification.show(e.getMessage());
+            // TODO: notify view about failure
         }
     }
 
@@ -44,7 +44,7 @@ public class TagPresenter implements TagViewHandler {
             tagView.getTagListLayout().afterSuccessfulFetch(tags);
         } catch (ServiceException e) {
             // TODO: log the exception
-            Notification.show(e.getMessage());
+            // TODO: notify view about failure
         }
     }
 }
