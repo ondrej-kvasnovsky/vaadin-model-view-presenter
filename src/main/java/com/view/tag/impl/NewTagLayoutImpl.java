@@ -19,6 +19,10 @@ public class NewTagLayoutImpl extends HorizontalLayout implements NewTagLayout {
 
     @Override
     public void init() {
+        setCaption("New tag");
+        setSpacing(true);
+        setMargin(true);
+
         txtTagName = new TextField("Tag name:");
         addComponent(txtTagName);
 

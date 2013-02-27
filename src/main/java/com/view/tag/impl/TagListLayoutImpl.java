@@ -16,6 +16,10 @@ public class TagListLayoutImpl extends HorizontalLayout implements TagListLayout
 
     @Override
     public void init() {
+        setCaption("Tag list");
+        setSpacing(true);
+        setMargin(true);
+
         tagList = new ListSelect();
         tagList.setItemCaptionPropertyId("name");
         addComponent(tagList);
